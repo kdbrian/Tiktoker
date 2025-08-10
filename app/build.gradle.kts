@@ -12,18 +12,20 @@ fun getSecret(key: String): String? {
 }
 
 plugins {
+
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
     id("com.google.android.libraries.mapsplatform.secrets-gradle-plugin")
+
 }
 
 android {
-    namespace = "com.kdbrian.templated"
+    namespace = "com.kdbrian.feed"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.kdbrian.templated"
+        applicationId = "com.kdbrian.menus.feed"
         minSdk = 26
         targetSdk = 35
         versionCode = 1
